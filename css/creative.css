@@ -3,10 +3,6 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
  */
- @font-face {
-     font-family: "coolfont";
-     src: url("../resources/font.woff") format('woff');
- }
  @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 body,
 html {
