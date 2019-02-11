@@ -21,10 +21,10 @@
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 57
-  });
+  // $('body').scrollspy({
+  //   target: '#mainNav',
+  //   offset: 57
+  // }); 
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -41,7 +41,7 @@
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
-  sr.reveal('.ellipseFore', {
+  sr.reveal('.img-fluid', {
     delay: 500,
     scale: 0
   });

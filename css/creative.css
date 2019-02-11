@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Creative v5.0.1 (https://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
- */
  @import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 body,
 html {
@@ -43,7 +38,11 @@ h5,
 h6 {
   font-family: 'poppins', sans-serif;
   font-weight: 700;
+  font-size: 2.2em;
 }
+p {
+  font-size: 1.1rem;
+} 
 
 .bg-primary {
   background-color: #00716a !important;
@@ -147,25 +146,25 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    border-color: transparent;
-    background-color: transparent;
+    border: none;
+    background-color: #fff;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: #00716a;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: #212529;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: #212529;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: #00716a;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -245,14 +244,14 @@ header.masthead p {
   background-color: #fff;
 }
 
-.portfolio-box {
+.events-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
 }
 
-.portfolio-box .portfolio-box-caption {
+.events-box .events-box-caption {
   position: absolute;
   bottom: 0;
   display: block;
@@ -261,12 +260,12 @@ header.masthead p {
   text-align: center;
   opacity: 0.7;
   color: #fff;
-  background: rgba(0,113, 106, 0.4);
+  background: rgba(0,0, 0, 0.4);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+.events-box .events-box-caption .events-box-caption-content {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -275,35 +274,36 @@ header.masthead p {
   text-align: center;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.events-box .events-box-caption .events-box-caption-content .project-category,
+.events-box .events-box-caption .events-box-caption-content .project-name {
   padding: 0 15px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+.events-box .events-box-caption .events-box-caption-content .project-category {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.events-box .events-box-caption .events-box-caption-content .project-name {
   font-size: 18px;
 }
 
-.portfolio-box:hover .portfolio-box-caption {
+.events-box:hover .events-box-caption {
   opacity: 1;
+  background: rgba(0,113, 106, 0.4);
 }
 
-.portfolio-box:focus {
+.events-box:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  .events-box .events-box-caption .events-box-caption-content .project-category {
     font-size: 16px;
   }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  .events-box .events-box-caption .events-box-caption-content .project-name {
     font-size: 22px;
   }
 }
@@ -360,52 +360,6 @@ header.masthead p {
   position: fixed;
   bottom: 15px;
   right: 5vw;
-}
-#preloader{
-  width: 100vw;
-  height: 100%;
-  background-color: white;
-  z-index: 2000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-}
-#preloader .line {
-  position: relative;
-  top: 50%;
-  width: 16em;
-  margin: 0 auto;
-  border-right: 2px solid #000;
-  font-size: 180%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;transform: translateY(-50%);
-}
-
-/*Animation*/
-
-#preloader .anim-typewriter {
-  animation: typewriter 3s steps(30) 1s 1 normal both,
-  blinkTextCursor 700ms steps(30) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-        width: 0;
-  }
-  to {
-        width: 8.5em;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-        border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-        border-right-color: transparent;
-  }
 }
 
 .animContainer{
@@ -466,25 +420,25 @@ header.masthead p {
   }
 }
 .animContainer img:nth-child(7){
-  animation: child7 5s ease-in-out 1s infinite alternate;
+  animation: child7 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(6){
-  animation: child6 5s ease-in-out 1s infinite alternate;
+  animation: child6 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(5){
-  animation: child5 5s ease-in-out 1s infinite alternate;
+  animation: child5 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(4){
-  animation: child4 5s ease-in-out 1s infinite alternate;
+  animation: child4 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(3){
-  animation: child3 5s ease-in-out 1s infinite alternate;
+  animation: child3 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(2){
-  animation: child2 5s ease-in-out 1s infinite alternate;
+  animation: child2 3s ease-in-out 1s infinite alternate;
 }
 .animContainer img:nth-child(1){
-  animation: child1 5s ease-in-out infinite alternate;
+  animation: child1 3s ease-in-out infinite alternate;
 }
 .buttonAnimation{
   width: 100%;
@@ -495,4 +449,25 @@ header.masthead p {
 .tap{
   width: 50px;
   height: 50px;
+}
+.notHeader{
+  color: #212529;
+}
+.videoCarousel{
+  height: 60vh;
+}
+.videoCarousel video{
+  width: 100%;
+}
+.carousel-control-prev{
+  height: 50%;
+}
+.carousel-control-next{
+  height: 50%;
+}
+#mobileapp img{
+  max-height: 120vh;
+}
+#events img{
+  height
 }
