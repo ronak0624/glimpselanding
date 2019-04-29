@@ -20,7 +20,7 @@ If you add a form field, you will need to add it here.
 $email_address = $_REQUEST['email_address'] ;
 $next_show = $_REQUEST['next_show'] ;
 $first_name = $_REQUEST['first_name'] ;
-$msg = 
+$spam_filter = $_REQUEST['phone_number'] ;
 "First Name: " . $first_name . "\r\n" . 
 "Email: " . $email_address . "\r\n" . 
 "Next show: " . $next_show ;
@@ -56,6 +56,10 @@ header( "Location: $feedback_page" );
 // If the form fields are empty, redirect to the error page.
 elseif (empty($first_name) || empty($email_address)) {
 header( "Location: $error_page" );
+}
+
+elseif (!empty($spam_filter)) {
+	header("Location: $error_page");
 }
 
 /* 
