@@ -31,47 +31,7 @@
 </head>
 
 <body id="page-top">
-    <!-- <div id="preloader">
-    <p class="line anim-typewriter">glimpse wearables</p>
-  </div> -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <div class="brandingContainer">
-                <a class="navbar-brand js-scroll-trigger" href="index.html">glimpse wearables</a>
-            </div>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="mobileapp.html">Mobile App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="events.html">Events</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- <section style="padding: 0;" class="bg-primary" id="about">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md text-center align-self-center">
-          <h1>The Glimpse <span style="color: #212529">Clip</span></h1>
-          <a class="btn btn-buy btn-xl js-scroll-trigger" href="#events">Explore</a>
-        </div>
-        <div class="col-md text-center">
-          <img id="ryanClip" src="img/ryguy.png" alt="ryanwearingtheclip">
-        </div>
-      </div>
-    </div>
-  </section> -->
-
+    <?php include 'navbar.html';?>
     <section class="py-5" id="events">
         <div style="padding: 2em;" class="container-fluid">
             <div class="row text-center">
@@ -153,6 +113,21 @@
                                 </div>
                                 <div class="project-name">
                                     Boogie T
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="events-box" href="https://scontent.cdninstagram.com/vp/4375541b995ad1e9a4887d814fa41d80/5CD0960F/t50.2886-16/58019243_313249796283451_2700048400564355072_n.mp4?_nc_ht=scontent.cdninstagram.com">
+                        <img class="img-fluid" src="img/concerts/thumbnails/chella.jpg" alt="">
+                        <div class="events-box-caption">
+                            <div class="events-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Indio, CA
+                                </div>
+                                <div class="project-name">
+                                    Coachella
                                 </div>
                             </div>
                         </div>

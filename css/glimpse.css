@@ -115,88 +115,24 @@ img::-moz-selection {
 }
 
 #mainNav {
-  border-bottom: 1px solid rgba(33, 37, 41, .1);
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  transition: all .2s;
-  text-align: center
+  /* border-bottom: solid rgba(0,0,0,0.2) 1px; */
 }
 
 #mainNav .navbar-brand {
+  font-weight: 900;
+}
+
+nav#mainNav a.d-none {
   font-weight: 700;
-  color: #00716a
+  color: #212121;
+  text-decoration: none;
 }
 
-#mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:hover {
-  color: #00716a
-}
-
-#mainNav .navbar-nav>li.nav-item>a.nav-link,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-  font-size: .9rem;
-  font-weight: 700;
-  color: #212529
-}
-
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
-  color: #00716a
-}
-
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active {
-  color: #00716a !important;
-  background-color: transparent
-}
-
-#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,
-#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover {
-  background-color: transparent
-}
-
-@media (min-width:992px) {
-  #mainNav {
-    border: none;
-    background-color: #fff
-  }
-
-  #mainNav .navbar-brand {
-    color: #00716a
-  }
-
-  #mainNav .navbar-brand:focus,
-  #mainNav .navbar-brand:hover,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
-    color: #212529
-  }
-
-  #mainNav .navbar-nav>li.nav-item>a.nav-link {
-    padding: .5rem 1rem
-  }
-
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
-  #mainNav .navbar-nav>li.nav-item>a.nav-link:hover,
-  #mainNav.navbar-shrink .navbar-brand,
-  #mainNav.navbar-shrink .navbar-brand:focus,
-  #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #00716a
-  }
-
-  #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(33, 37, 41, .1);
-    background-color: #fff
-  }
-
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus {
-    color: #212529
-  }
-
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,
-  #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover {
-    color: #00716a
-  }
+nav#mainNav a.d-none:hover,
+nav#mainNav a.d-none:focus {
+  color: #00716a;
 }
 
 header.masthead {
@@ -500,7 +436,7 @@ header.masthead p {
   height: 50%
 }
 
-#filter-input{
+#filter-input {
   display: none;
 }
 
@@ -509,12 +445,13 @@ header.masthead p {
   max-width: calc(100vw - 10rem);
   margin: 0 5rem
 }
+
 .cta {
   background: #00716a;
   font-weight: bold;
   border-radius: 1rem;
   line-height: 3rem;
-	font-size: 1rem;
+  font-size: 1rem;
   height: 3rem;
   width: 17rem;
   text-align: center;
@@ -522,29 +459,34 @@ header.masthead p {
   cursor: pointer;
   padding: .05rem;
 }
+
 .cta .hide {
   display: none;
 }
+
 .cta form {
   display: flex;
 }
+
 .cta span {
   opacity: 0;
   width: 100%;
   text-align: center;
   -webkit-animation: fadeIn 0.3s ease-in-out;
-          animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
+
 .cta .input {
   display: none;
   opacity: 0;
   flex: 3;
   text-align: left;
 }
+
 .cta .input input {
   border: 0;
   width: 240px;
@@ -553,11 +495,13 @@ header.masthead p {
   outline: none;
   color: #ff7b73;
 }
+
 .cta .button {
   display: none;
   opacity: 0;
   flex: 1;
 }
+
 .cta .button button {
   outline: none;
   float: right;
@@ -571,43 +515,49 @@ header.masthead p {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
 .cta .button button:disabled {
   color: #fc9f9d;
   opacity: 0.8;
 }
+
 .cta.sent {
   cursor: default;
 }
+
 .cta.active {
   width: 350px;
   text-align: left;
   transition: width 0.2s ease-in-out;
   cursor: default;
 }
+
 .cta.active span {
   display: none;
 }
+
 .cta.active .input,
 .cta.active .button {
   display: block;
   -webkit-animation: fadeIn 0.3s ease-in-out;
-          animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -615,21 +565,24 @@ header.masthead p {
   0% {
     opacity: 0;
     -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    transform: scale(0.7);
   }
+
   100% {
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-#events a{
+
+#events a {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-#events img{
+
+#events img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%
@@ -647,35 +600,37 @@ header.masthead p {
   margin-bottom: 1rem;
 }
 
-.form-label-group > input{
+.form-label-group>input {
   border-radius: 0.3rem;
   border-style: solid;
   border-width: 1px;
 }
 
-.form-label-group > input:focus{
- outline: none;
+.form-label-group>input:focus {
+  outline: none;
 }
 
-.form-label-group > input,
-.form-label-group > label {
+.form-label-group>input,
+.form-label-group>label {
   height: 3.125rem;
   padding: .75rem;
   width: 100%;
-  
+
 }
 
-.form-label-group > label {
+.form-label-group>label {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
   width: 100%;
-  margin-bottom: 0; /* Override default `<label>` margin */
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
   line-height: 1.5;
   color: #495057;
   pointer-events: none;
-  cursor: text; /* Match the input under the label */
+  cursor: text;
+  /* Match the input under the label */
   border: 1px solid transparent;
   border-radius: .25rem;
   transition: all .1s ease-in-out;
@@ -706,7 +661,7 @@ header.masthead p {
   padding-bottom: .25rem;
 }
 
-.form-label-group input:not(:placeholder-shown) ~ label {
+.form-label-group input:not(:placeholder-shown)~label {
   padding-top: .25rem;
   padding-bottom: .25rem;
   font-size: 12px;
