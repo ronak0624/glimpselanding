@@ -30,12 +30,6 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link
-        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link
-        href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-        rel='stylesheet' type='text/css'>
 
     <!-- IMG popup CSS -->
     <link href="resources/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -136,30 +130,30 @@
             </div>
         </div>
     </section>
-
-    <form class="betaform text-center" method="post" action="send_mail.php">
-        <div class="text-center mb-4">
-            <h1 class="h3 mb-3 font-weight-normal">Beta test at your next concert!</h1>
-        </div>
-        <div class="form-label-group text-left">
-            <input type="text" name="first_name" placeholder="Name" required>
-            <label for="name">Name</label>
-        </div>
-        <div class="form-label-group text-left">
-            <input type="next_show" name="next_show" placeholder="Next Show" required>
-            <label for="next_show">Next Show</label>
-        </div>
-        <div class="form-label-group text-left">
-            <input type="email" name="email_address" placeholder="E-Mail" required>
-            <label for="email">E-Mail</label>
-        </div>
-        <div id="filter-input" class="form-label-group text-left">
-            <input type="num" name="phone_number" placeholder="Phone Number">
-            <label for="number">Phone Number</label>
-        </div>
-        <button class="btn btn-primary btn-xl js-scroll-trigger" type="submit">Submit</button>
-    </form>
-    </section>
+    <div class="container-fluid">
+        <form class="betaform text-center" method="post" action="send_mail.php">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Beta test at your next concert!</h1>
+            </div>
+            <div class="form-label-group text-left">
+                <input type="text" name="first_name" placeholder="Name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="form-label-group text-left">
+                <input type="next_show" name="next_show" placeholder="Next Show" required>
+                <label for="next_show">Next Show</label>
+            </div>
+            <div class="form-label-group text-left">
+                <input type="email" name="email_address" placeholder="E-Mail" required>
+                <label for="email">E-Mail</label>
+            </div>
+            <div id="filter-input" class="form-label-group text-left">
+                <input type="num" name="phone_number" placeholder="Phone Number">
+                <label for="number">Phone Number</label>
+            </div>
+            <button class="btn btn-primary btn-xl js-scroll-trigger" type="submit">Submit</button>
+        </form>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

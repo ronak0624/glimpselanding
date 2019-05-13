@@ -29,11 +29,13 @@ h6 {
 
 body,
 html {
+  max-width: 100%;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background-color: #fff
+  background-color: #fff;
+  
 }
-
 hr {
   max-width: 500px;
   border-width: 3px;
@@ -117,22 +119,31 @@ img::-moz-selection {
 #mainNav {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
-  /* border-bottom: solid rgba(0,0,0,0.2) 1px; */
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1000;
 }
 
-#mainNav .navbar-brand {
-  font-weight: 900;
-}
-
-nav#mainNav a.d-none {
+nav#mainNav a.nav-link.navbar-brand {
   font-weight: 700;
+  color: #00716a;
+}
+
+
+nav#mainNav a.nav-link {
+  font-weight: 400;
   color: #212121;
   text-decoration: none;
+  transition: 0.2s linear;
 }
 
-nav#mainNav a.d-none:hover,
-nav#mainNav a.d-none:focus {
+nav#mainNav a.nav-link:hover,
+nav#mainNav a.nav-link:focus {
   color: #00716a;
+}
+#mainNav .navbar-toggler-icon{
+  color: #212121;
 }
 
 header.masthead {
@@ -666,4 +677,9 @@ header.masthead p {
   padding-bottom: .25rem;
   font-size: 12px;
   color: #777;
+}
+
+footer{
+  background-color: #00716a;
+  width: 100vw;
 }

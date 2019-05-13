@@ -32,7 +32,7 @@
 
 <body id="page-top">
     <?php include 'navbar.html';?>
-    <section class="py-5" id="events">
+    <section class="py-5 mt-4" id="events">
         <div style="padding: 2em;" class="container-fluid">
             <div class="row text-center">
                 <div class="col">
@@ -149,7 +149,6 @@
     <!-- Plugin JavaScript -->
     <script src="resources/jquery-easing/jquery.easing.min.js"></script>
     <script src="resources/scrollreveal/scrollreveal.min.js"></script>
-    <!-- <script src="resources/magnific-popup/jquery.magnific-popup.min.js"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="js/glimpse.js"></script>
